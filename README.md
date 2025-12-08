@@ -10,4 +10,5 @@ API de los pilotos de la Formula 1 con las siguientes funcionalidades:
   - PUST /Pilotos/:id
   - DELETE /Pilotos/id
 - Utiliza una base de datos SQLite (no incluida en el repositorio) que contiene una tabla `Piltos` con las columnas: `id`, `name`, `equipo`, `fecha_nacimiento`, `nº_victorias`, `mejor_tiempo`, `campeonatos` y `numero_campeonatos`
-- Control de errores: 404# David-Backend-Trabajo-1-EV
+- Control de errores: 404#
+- hace falta caer npm install y crear Pilotos.db
