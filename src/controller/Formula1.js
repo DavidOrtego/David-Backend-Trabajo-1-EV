@@ -41,9 +41,10 @@ const postPiloto = (async (req, res) => {
     const mejor_tiempo = req.body.mejor_tiempo;
     const campeonatos = req.body.campeonatos;
     const numero_campeonatos = req.body.numero_campeonatos;
+    const comparte_equipo= req.body.comparte_equipo;
 
     
-    const newPiloto = await addPiloto(name, equipo, fecha_nacimiento, nº_victorias, mejor_tiempo, campeonatos, numero_campeonatos);
+    const newPiloto = await addPiloto(name, equipo, fecha_nacimiento, nº_victorias, mejor_tiempo, campeonatos, numero_campeonatos,comparte_equipo);
    
     res.status(201).json(newPiloto);
 });
@@ -66,8 +67,9 @@ const putPiloto = (async (req, res) => {
     const mejor_tiempo = req.body.mejor_tiempo;
     const campeonatos = req.body.campeonatos;
     const numero_campeonatos = req.body.numero_campeonatos;
+    const comparte_equipo= req.body.comparte_equipo;
 
-    await modifyPiloto(id, name, equipo, fecha_nacimiento, nº_victorias, mejor_tiempo, campeonatos, numero_campeonatos);
+    await modifyPiloto(id, name, equipo, fecha_nacimiento, nº_victorias, mejor_tiempo, campeonatos, numero_campeonatos, comparte_equipo);
 
     res.status(204).end();
 });
