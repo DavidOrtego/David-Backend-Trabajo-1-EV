@@ -15,6 +15,7 @@ async function initDatabase() {
                 table.string('mejor_tiempo');
                 table.boolean('campeonatos');
                 table.integer('numero_campeonatos');
+                table.string('comparte_equipo');
                 table.timestamps(true, true);
             });
             console.log('✅ Tabla Pilotos creada exitosamente');
